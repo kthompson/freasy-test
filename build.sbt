@@ -10,3 +10,5 @@ libraryDependencies ++= Seq(
   "com.thangiee" %% "freasy-monad" % "0.4.0",
   "org.typelevel" %% "cats" % "0.7.2"
 )
+
+addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.0" cross CrossVersion.full)

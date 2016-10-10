@@ -12,7 +12,7 @@ trait FilterStore {
   // abstract methods are automatically lifted into part of the grammar ADT
   def put[T](key: String, value: T): FilterStoreF[Unit]
   def get[T](key: String): FilterStoreF[Option[T]]
-  def getAll[T](): FilterStoreF[List[T]]
+  def getAll[T]: FilterStoreF[List[T]]
   def remove(key: String): FilterStoreF[Unit]
   def removeAll(): FilterStoreF[Unit]
 
